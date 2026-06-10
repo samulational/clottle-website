@@ -9,54 +9,65 @@
 body {
   font-family: Arial, sans-serif;
   background: #f5f7fa;
-  color: #333;
 }
 
-/* TOP GRADIENT BANNER */
+/* TOP BANNER */
 .top-banner {
   background: linear-gradient(90deg, #1e3c72, #2a5298);
-  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-/* NAVIGATION */
+/* LOGO IN BANNER */
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* NAV */
 .nav-bar {
   display: flex;
-  justify-content: center;
-  gap: 25px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .nav-bar a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
   font-size: 14px;
   transition: 0.2s;
 }
 
 .nav-bar a:hover {
+  opacity: 0.8;
   text-decoration: underline;
-  opacity: 0.85;
 }
 
-/* MAIN CONTENT */
-.content {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
+/* MAIN LOGO CENTER */
+.home {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.main-logo {
+  max-width: 250px;
+  height: auto;
+}
+
+/* SECTIONS */
 section {
-  margin-bottom: 60px;
-  padding: 20px;
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
   background: white;
+  margin-bottom: 40px;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-h1 {
-  margin-bottom: 10px;
 }
